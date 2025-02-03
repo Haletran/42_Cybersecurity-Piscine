@@ -32,4 +32,7 @@ Useful packages for `spider` :
 ```./spider.go:39:14: more than one character in rune literal```
 -> use double quotes instead of single quotes for strings
 
+### TODO 
 
+- [] Need to add more tags check
+- [] Add flags for depth and recursive

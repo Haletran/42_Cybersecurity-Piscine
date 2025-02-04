@@ -32,7 +32,15 @@ Useful packages for `spider` :
 ```./spider.go:39:14: more than one character in rune literal```
 -> use double quotes instead of single quotes for strings
 
-### TODO 
+## Day01
 
-- [] Need to add more tags check
-- [] Add flags for depth and recursive
+- The executable must be named ft_otp
+- Your program must take arguments.
+  1. -g: The program receives as argument a hexadecimal key of at least 64 char-
+acters. The program stores this key safely in a file called ft_otp.key, which
+is encrypted.
+    2. -k: The program generates a new temporary password based on the key given
+as argument and prints it on the standard output.
+- Your program must use the HOTP algorithm (RFC 4226).
+- The generated one-time password must be random and must always contain the
+same format, i.e. 6 digits.

@@ -26,7 +26,6 @@ func setupTags(c *colly.Collector, cli *CLI, links *[]string, visited map[string
 		}
     })
 
-
     c.OnHTML("link", func(e *colly.HTMLElement) {
         href := e.Attr("href")
         bar1.Add(1)
@@ -36,7 +35,6 @@ func setupTags(c *colly.Collector, cli *CLI, links *[]string, visited map[string
             (*wrongFormat)++
         }
     })
-
 
     c.OnHTML("meta", func(e *colly.HTMLElement) {
         href := e.Attr("content")

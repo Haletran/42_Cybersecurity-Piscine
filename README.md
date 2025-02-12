@@ -44,3 +44,14 @@ as argument and prints it on the standard output.
 - Your program must use the HOTP algorithm (RFC 4226).
 - The generated one-time password must be random and must always contain the
 same format, i.e. 6 digits.
+
+## Day02
+
+Setup a `.onion website` using the Tor network.
+
+```bash
+# access ssh on the server
+ssh -i ~/.ssh/ft-onion root@172.17.0.2 -p 4242
+```
+
+[Host your own Tor darkweb .onion site for free with NGINX](https://www.youtube.com/watch?v=6BV-3yWzWcI&t=10s)

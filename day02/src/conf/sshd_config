@@ -1,0 +1,11 @@
+Include /etc/ssh/sshd_config.d/*.conf
+
+Port 4242
+
+KbdInteractiveAuthentication no
+
+UsePAM yes
+
+AcceptEnv LANG LC_*
+
+Subsystem       sftp    /usr/lib/openssh/sftp-server
